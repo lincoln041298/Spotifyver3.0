@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .icon {
+        @apply h-5 w-5;
+    }
+
+    .icon-playback {
+      @apply icon cursor-pointer hover:scale-125
+    }
+}
+
+@layer utilities {
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .scrollbar-hidden {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    
+}
